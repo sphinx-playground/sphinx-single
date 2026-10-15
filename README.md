@@ -1,15 +1,11 @@
 # sphinx-single
 
-## About
-All-in-one repository framework hosting an integrated code-base and Sphinx tree.
-
-## Overview
-This repository serves as a live, interactive reference demonstrating a unified mono-repo architecture. Instead of isolating software and documentation in separate repositories, this framework houses both components under a single roof to enable atomic commits and simplify CI pipelines.
+This is an all-in-one repository hosting an integrated code-base and **Sphinx** tree. Instead of isolating software and documentation in separate repositories, this framework houses both components under a single roof to enable atomic commits and simplify CI pipelines.
 
 ## Features
-* **Atomic Continuous Integration:** Every single commit is automatically validated by an internal GitHub Actions runner that tests the code syntax and docstring compilation simultaneously.
-* **Cross-Domain Atomic Commits:** Enables simultaneous tracking of source code adjustments and document updates under a single Git hash, preventing out-of-sync states.
-* **Native Path Resolution:** The configuration uses simple relative parent look-ups to discover the application modules natively without complex path environmental requirements.
+* **Atomic continuous integration:** Every commit is automatically validated by an internal **GitHub Actions** runner that tests the code-syntax and docstring-compilation simultaneously.
+* **Cross-domain atomic commits:** Enables simultaneous tracking of source code adjustments and document updates under a single Git hash, preventing out-of-sync states.
+* **Native path resolution:** The configuration uses simple relative parent look-ups to discover the application modules natively without the complex path environmental requirements that are typical for split repositories.
 
 ## Layout
 ```text
