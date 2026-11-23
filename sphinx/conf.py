@@ -25,6 +25,8 @@ project = 'Sphinx Sandbox: Code and Docs'
 copyright = '2026, Elliria'
 author = 'Elliria'
 
+# -- General configuration ---------------------------------------------------
+
 # Provide the location for the theme assets in the resources sub-directory:
 templates_path = ['resources/templates']
 html_static_path = ['resources/static']
