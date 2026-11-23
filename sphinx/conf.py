@@ -27,14 +27,18 @@ author = 'Elliria'
 
 # -- General configuration ---------------------------------------------------
 
-# Provide the location for the theme assets in the resources sub-directory:
-templates_path = ['resources/templates']
-html_static_path = ['resources/static']
+# List of Sphinx extension module names grouped by purpose since they're
+# processed in the listed order. Both native (named 'sphinx.ext.*') and
+# custom extensions are accepted:
 extensions = [
     'sphinx.ext.autodoc',  # The engine that executes the code to grab docstrings
     'sphinx.ext.viewcode', # Adds handy "[source]" links to your compiled site
     'sphinx.ext.githubpages',  # Bypass Jekyll blocking bugs to enable GitHub Pages
 ]
+
+# Provide the location for the theme assets in the resources sub-directory:
+templates_path = ['resources/templates']
+html_static_path = ['resources/static']
 
 # Provide the location for the master document:
 master_doc = 'index'
