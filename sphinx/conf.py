@@ -19,7 +19,8 @@ import sys
 # with '..' telling Python to step up into the repository root:
 sys.path.insert(0, os.path.abspath('..'))
 
-# --- Standard Sphinx configurations continue below ---
+# -- Project information -----------------------------------------------------
+
 project = 'Sphinx Sandbox: Code and Docs'
 copyright = '2026, Elliria'
 author = 'Elliria'
