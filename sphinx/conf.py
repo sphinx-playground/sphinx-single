@@ -51,8 +51,11 @@ exclude_patterns = [
     '**/._*',          # Prevents Sphinx from tracking macOS AppleDouble metadata files
     '*.md',            # Prevents Sphinx from tracking all Markdown in the root directory
     '**/Thumbs.db',    # Prevents Sphinx from tracking all nested Windows thumbnail caches
-   '**/.venv/**',      # Prevents Sphinx from tracking all nested virtual environments
+    '**/.venv/**',      # Prevents Sphinx from tracking all nested virtual environments
 ]
+
+# Provide the location for the master document:
+master_doc = 'index'
 
 # -- HTML configuration ------------------------------------------------------
 
@@ -65,5 +68,3 @@ html_static_path = [
     'resources/static',
 ]
 
-# Provide the location for the master document:
-master_doc = 'index'
