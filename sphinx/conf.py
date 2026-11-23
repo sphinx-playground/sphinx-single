@@ -41,6 +41,19 @@ templates_path = [
     'resources/templates',
 ]
 
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path, if it
+# exists.
+exclude_patterns = [
+    '**/.DS_Store',    # Prevents Sphinx from tracking the macOS hidden **Desktop Services Store** file
+    '**/__MACOSX/**',  # Prevents Sphinx from tracking macOS zip metadata directories
+    '**/._*',          # Prevents Sphinx from tracking macOS AppleDouble metadata files
+    '*.md',            # Prevents Sphinx from tracking all Markdown in the root directory
+    '**/Thumbs.db',    # Prevents Sphinx from tracking all nested Windows thumbnail caches
+   '**/.venv/**',      # Prevents Sphinx from tracking all nested virtual environments
+]
+
 # Provide the location for the theme assets in the resources sub-directory:
 html_static_path = ['resources/static']
 
