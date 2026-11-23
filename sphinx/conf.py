@@ -9,7 +9,13 @@
 import os
 import sys
 
-# Inject the parent directory into Python's active system path-matrix:
+# -- Path information---------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute.
+
+# Inject the parent directory into Python's active system path-matrix
 # with '..' telling Python to step up into the repository root:
 sys.path.insert(0, os.path.abspath('..'))
 
