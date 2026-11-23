@@ -58,8 +58,12 @@ exclude_patterns = [
 
 html_theme = 'sphinx_rtd_theme'
 
-# Provide the location for the theme assets in the resources sub-directory:
-html_static_path = ['resources/static']
+# List of paths, relative to the documentation root directory, to custom
+# static files (such as style-sheets). These files are copied over after the
+# built-in static files, overwriting them:
+html_static_path = [
+    'resources/static',
+]
 
 # Provide the location for the master document:
 master_doc = 'index'
