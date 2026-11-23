@@ -35,8 +35,13 @@ extensions = [
     'sphinx.ext.githubpages',  # Bypass Jekyll blocking bugs to enable GitHub Pages
 ]
 
+# List of paths, relative to the documentation root directory, that contain
+# templates:
+templates_path = [
+    'resources/templates',
+]
+
 # Provide the location for the theme assets in the resources sub-directory:
-templates_path = ['resources/templates']
 html_static_path = ['resources/static']
 
 # Provide the location for the master document:
