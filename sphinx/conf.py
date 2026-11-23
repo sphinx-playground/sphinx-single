@@ -54,10 +54,12 @@ exclude_patterns = [
    '**/.venv/**',      # Prevents Sphinx from tracking all nested virtual environments
 ]
 
+# -- HTML configuration ------------------------------------------------------
+
+html_theme = 'sphinx_rtd_theme'
+
 # Provide the location for the theme assets in the resources sub-directory:
 html_static_path = ['resources/static']
 
 # Provide the location for the master document:
 master_doc = 'index'
-
-html_theme = 'sphinx_rtd_theme'
