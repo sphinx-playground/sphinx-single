@@ -7,6 +7,7 @@
 # -- Imports -----------------------------------------------------------------
 
 import os
+import re
 import sys
 
 # -- Path information---------------------------------------------------------
@@ -68,3 +69,17 @@ html_static_path = [
     'resources/static',
 ]
 
+# -- Ignored link configuration ----------------------------------------------
+
+# List of plain links (without regex patterns) for Sphinx to ignore to prevent
+# false positives on validation:
+ignored_links = [
+    "https://example.invalid/page",
+]
+
+# Automatically process the ignored_links list, escaping each URL for regex
+# use and appending a wildcard
+
+linkcheck_ignore = [
+    f"{re.escape(url)}.*" for url in ignored_links
+]
