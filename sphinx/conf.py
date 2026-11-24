@@ -22,8 +22,8 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'Sphinx Sandbox: Code and Docs'
-copyright = '2026, Elliria'
 author = 'Elliria'
+copyright = '2026, Elliria'
 
 # -- General configuration ---------------------------------------------------
 
